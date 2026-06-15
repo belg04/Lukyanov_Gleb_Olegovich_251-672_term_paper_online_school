@@ -51,5 +51,57 @@ a:focus {
   backdrop-filter: blur(14px);
   border-bottom: 1px solid rgba(36, 87, 214, 0.12);
 }
+.nav {
+  min-height: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 800;
+  color: #172033;
+}
+
+.logo:hover {
+  transform: translateY(-2px);
+}
+
+.logo__mark {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border-radius: 14px;
+  color: #ffffff;
+  background: linear-gradient(135deg, #2457d6, #6f48ff 55%, #14c8a8);
+  box-shadow: 0 12px 24px rgba(36, 87, 214, 0.26);
+}
+
+.nav__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.nav__list a {
+  padding: 8px 10px;
+  border-radius: 999px;
+  font-weight: 700;
+  color: #26344f;
+}
+
+.nav__list a:hover,
+.nav__list a:focus {
+  background: #e8efff;
+}
 
 
