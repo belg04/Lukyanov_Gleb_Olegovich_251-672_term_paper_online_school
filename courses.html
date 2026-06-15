@@ -23,8 +23,7 @@
     </nav>
   </header>
 
-
-   <main>
+  <main>
     <section class="page-hero">
       <div class="container">
         <p class="eyebrow">Каталог курсов</p>
@@ -65,5 +64,83 @@
       </div>
     </section>
 
+    <section class="section section--soft" id="form">
+      <div class="container form-layout">
+        <div>
+          <p class="eyebrow">Пробный урок</p>
+          <h2>Оставьте заявку</h2>
+          <p>Форма демонстрирует обязательные поля, выбор из списка, radio, checkbox, date, email, tel и textarea. Данные отправляются методом POST.</p>
+        </div>
+        <form class="signup-form" action="#" method="post">
+          <fieldset>
+            <legend>Данные ученика</legend>
+            <label for="name">Имя</label>
+            <input type="text" id="name" name="name" placeholder="Например, Анна" required>
+
+            <label for="birthdate">Дата рождения</label>
+            <input type="date" id="birthdate" name="birthdate" required>
+
+            <span class="label-text">Пол</span>
+            <div class="inline-group">
+              <label><input type="radio" name="gender" value="female" required> Женский</label>
+              <label><input type="radio" name="gender" value="male"> Мужской</label>
+              <label><input type="radio" name="gender" value="other"> Не указывать</label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Контакты</legend>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="student@example.com" required>
+
+            <label for="phone">Телефон</label>
+            <input type="tel" id="phone" name="phone" placeholder="+7 999 000-00-00" required>
+
+            <label for="password">Пароль для личного кабинета</label>
+            <input type="password" id="password" name="password" minlength="6" required>
+          </fieldset>
+
+          <fieldset>
+            <legend>Выбор курса</legend>
+            <label for="course">Направление</label>
+            <select id="course" name="course" required>
+              <option value="">Выберите курс</option>
+              <option value="web">Веб-разработка</option>
+              <option value="python">Python Start</option>
+              <option value="design">Digital Design</option>
+            </select>
+
+            <span class="label-text">Удобный интервал для связи</span>
+            <div class="inline-group inline-group--wrap">
+              <label><input type="checkbox" name="time" value="morning"> Утро</label>
+              <label><input type="checkbox" name="time" value="day"> День</label>
+              <label><input type="checkbox" name="time" value="evening"> Вечер</label>
+              <label><input type="checkbox" name="time" value="night"> Ночь</label>
+            </div>
+
+            <label for="comment">Комментарий</label>
+            <textarea id="comment" name="comment" rows="4" placeholder="Напишите цель обучения или уровень подготовки"></textarea>
+          </fieldset>
+
+          <button class="button button--primary" type="submit">Отправить заявку</button>
+          <button class="button button--ghost" type="reset">Очистить форму</button>
+        </form>
+      </div>
+    </section>
+
+ 
+
+  <footer class="site-footer">
+    <div class="container footer__grid">
+      <div>
+        <a class="logo logo--footer" href="index.html"><span class="logo__mark">CW</span><span>CodeWave</span></a>
+        <p>Учебный проект сайта онлайн-школы по дисциплине «Основы веб-технологий».</p>
+      </div>
+      <address>
+        <a href="mailto:info@codewave.example">info@codewave.example</a><br>
+        <a href="tel:+79990000000">+7 999 000-00-00</a>
+      </address>
+    </div>
+  </footer>
 </body>
 </html>
